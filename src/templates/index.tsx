@@ -47,6 +47,7 @@ export const config: TemplateConfig = {
       "slug",
       "geocodedCoordinate",
       "services",
+      "neighborhood"
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -104,6 +105,7 @@ export const getHeadConfig: GetHeadConfig<TemplateProps> = (props): HeadConfig =
 const Index: Default<TemplateProps> = (props) => {
   const { document } = props;
   const {
+    neighborhood,
     name,
     address,
     openTime,
@@ -149,6 +151,7 @@ const Index: Default<TemplateProps> = (props) => {
       <div className="centered-container">
         <div className="section">
           <div className="grid grid-cols-3 gap-x-10 gap-y-10">
+            <h1> {neighborhood}</h1>
             <div className="bg-gray-100 p-5 space-y-12">
               <Contact address={address} phone={mainPhone}></Contact>
               {services && <List list={services}></List>}
