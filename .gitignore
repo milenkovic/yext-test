@@ -6,5 +6,4 @@ dist/
 .artifact-output
 sites-config/features.json
 .npmrc
-
 .DS_Store
