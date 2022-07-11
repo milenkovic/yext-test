@@ -154,7 +154,6 @@ const Index: Default<TemplateProps> = (props) => {
             <h1> {neighborhood}</h1>
             <div className="bg-gray-100 p-5 space-y-12">
               <Contact address={address} phone={mainPhone}></Contact>
-              {services && <List list={services}></List>}
             </div>
             <div className="col-span-2 pt-5 space-y-10">
               <div>
