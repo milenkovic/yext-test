@@ -67,7 +67,7 @@ const Static: Default<PokemonData> = (data) => {
   return (
     <>
       <div>Hello from {name}</div>
-      <button onClick={() => setNum(num + 1)}>Click me</button>
+      <button onClick={() => setNum(num + 1)}>Click me again</button>
       Num: {num}
     </>
   );
