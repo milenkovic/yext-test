@@ -47,11 +47,12 @@ export const config: TemplateConfig = {
       "slug",
       "geocodedCoordinate",
       "services",
-      "neighborhood"
+      "neighborhood",
+      "headline"
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
-      entityTypes: ["location"],
+      entityTypes: ["ce_business"],
     },
     // The entity language profiles that documents will be generated for.
     localization: {
@@ -113,6 +114,7 @@ const Index: Default<TemplateProps> = (props) => {
     mainPhone,
     geocodedCoordinate,
     services,
+    headline
   } = document;
 
   const links: Link[] = [
@@ -151,8 +153,8 @@ const Index: Default<TemplateProps> = (props) => {
       <div className="centered-container">
         <div className="section">
           <div className="grid grid-cols-3 gap-x-10 gap-y-10">
-            <h1> {neighborhood}</h1>
             <div className="bg-gray-100 p-5 space-y-12">
+              <h1 className="ls-headline">{headline}</h1>
               <Contact address={address} phone={mainPhone}></Contact>
             </div>
             <div className="col-span-2 pt-5 space-y-10">
