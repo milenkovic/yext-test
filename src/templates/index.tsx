@@ -152,8 +152,8 @@ const Index: Default<TemplateProps> = (props) => {
       </Banner>
       <div className="centered-container">
         <div className="section">
-          <div className="bg-gray-100 p-5 space-y-12">
-            <h1 className="ls-headline">HD {headline}</h1>
+          <div className="bg-gray-100 p-20 space-y-12">
+            <h1 className="ls-headline">{headline}</h1>
           </div>
           <div className="grid grid-cols-3 gap-x-10 gap-y-10">
             <div className="bg-gray-100 p-5 space-y-12">
