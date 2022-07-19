@@ -155,22 +155,6 @@ const Index: Default<TemplateProps> = (props) => {
           <div className="bg-gray-100 p-20 space-y-12">
             <h1 className="ls-headline">{headline}</h1>
           </div>
-          <div className="grid grid-cols-3 gap-x-10 gap-y-10">
-            <div className="bg-gray-100 p-5 space-y-12">
-              {address && <Contact address={address} phone={mainPhone}></Contact>}
-            </div>
-            <div className="col-span-2 pt-5 space-y-10">
-              <div>
-                {hours && <Hours title={"Restaurant Hours"} hours={hours} />}
-              </div>
-              {geocodedCoordinate && (
-                <StaticMap
-                  latitude={geocodedCoordinate.latitude}
-                  longitude={geocodedCoordinate.longitude}
-                ></StaticMap>
-              )}
-            </div>
-          </div>
         </div>
         <Footer></Footer>
       </div>
